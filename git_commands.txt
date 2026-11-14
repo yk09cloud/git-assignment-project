@@ -1,0 +1,32 @@
+1. git init
+Initializes a new local Git repository inside the project folder.
+
+2. git status
+Displays the state of the working directory and staging area, showing untracked, modified, and staged files.
+
+3. git add <filename>
+Stages new or modified files from the working directory into the staging area for the next commit.
+
+4. git commit -m '<message>'
+Records the staged snapshot permanently in the local repository history with a descriptive message.
+
+5. git branch feature
+Creates a new branch named 'feature' pointing to the current commit.
+
+6. git checkout <branch-name>
+Switches the active working directory between branches (used to switch to 'feature' and back to 'main').
+
+7. git merge --no-ff feature -m '<message>'
+Merges changes from the 'feature' branch into the 'main' branch and records an explicit merge commit.
+
+8. git log --oneline --graph --all
+Displays a visual graph of all commits, branches, and merges in a compact one-line format.
+
+9. git revert HEAD --no-edit
+Undoes the last commit safely by creating a new commit that reverses the changes while preserving history.
+
+10. git remote add origin <repository-URL>
+Connects the local Git repository to the remote repository hosted on GitHub.
+
+11. git push -u origin --all
+Uploads all local branches and commit histories to the public GitHub repository.
